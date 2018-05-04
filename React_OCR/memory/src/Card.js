@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types";
 
 import './Card.css'
 
@@ -16,6 +17,18 @@ const Card = ({ card, feedback, onClick }) => (
 )
 
 export default Card
+
+Card.propTypes = {
+    card: PropTypes.string.isRequired,
+    feedback: PropTypes.oneOf([
+      'hidden',
+      'justMatched',
+      'justMismatched',
+      'visible',
+    ]).isRequired,
+    onClick: PropTypes.func.isRequired,
+}
+// oneOf pour énumération.
 
 // On déstructure directement les props passées en arguments (un gros objet de props).
 
