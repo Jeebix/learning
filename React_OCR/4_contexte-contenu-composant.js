@@ -8,7 +8,7 @@
     // alors utiliser la grappe JSX que voici »), on utilisera l’opérateur logique  &&,
     // avec la condition comme opérande de gauche, et la grappe JSX comme opérande de droite.
     <p>{42 > 43 && document.nonExistingMethod()}</p>
-        // Si condition échoue, opérande ded roite pas évaluée. (vaudra false et donc JSX l'ignorera).
+        // Si condition échoue, opérande de droite pas évaluée. (vaudra false et donc JSX l'ignorera).
         <p>{user.admin && <a href="/admin">Faire des trucs de VIP</a>}</p>
         // Si condition remplie, l'expression évalue son opérande de droite, qui est la valeur finale:
         // la grappe JSX sera utilisée.

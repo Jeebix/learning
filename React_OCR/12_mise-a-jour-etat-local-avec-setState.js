@@ -1,0 +1,1 @@
+this.setState({ open: true }) // modifie uniquement cette propriété
